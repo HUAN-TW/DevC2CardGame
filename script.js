@@ -37,7 +37,7 @@ const view = {
   getCardContent(index) {
     //接到的input 要再區分花色與是否要換文字
     const number = this.transformNumber((index % 13) + 1)
-    const symbol = Symbols[Math.floor(index / 13)]``
+    const symbol = Symbols[Math.floor(index / 13)]
     return `
             <p>${number}</p>
             <img src="${symbol}" />
